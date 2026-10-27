@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" fill="none" font-family="Georgia, serif">
+  <title>Two voices: a different soul or a different job</title>
+  <rect width="760" height="380" fill="#FBF8F3"/>
+  <text x="24" y="34" fill="#1E1A16" font-size="17" font-weight="bold">Two voices: a different soul, or a different job</text>
+  <rect x="200" y="56" width="268" height="300" rx="6" stroke="#1E1A16" stroke-width="1.25"/>
+  <rect x="476" y="56" width="268" height="300" rx="6" fill="#A2462A" fill-opacity="0.08" stroke="#A2462A" stroke-width="2"/>
+  <text x="334" y="86" text-anchor="middle" fill="#1E1A16" font-size="15" font-weight="bold">The essence voice</text>
+  <text x="610" y="86" text-anchor="middle" fill="#1E1A16" font-size="15" font-weight="bold">The vocation voice</text>
+  <g stroke="#1E1A16" stroke-opacity="0.18">
+    <line x1="24" y1="104" x2="744" y2="104"/>
+    <line x1="24" y1="154" x2="744" y2="154"/>
+    <line x1="24" y1="204" x2="744" y2="204"/>
+    <line x1="24" y1="254" x2="744" y2="254"/>
+    <line x1="24" y1="304" x2="744" y2="304"/>
+  </g>
+  <g fill="#6B635A" font-size="13.5" font-style="italic">
+    <text x="24" y="134">Main sources</text>
+    <text x="24" y="184">What makes a Jew</text>
+    <text x="24" y="234">The convert</text>
+    <text x="24" y="284">Its strength</text>
+    <text x="24" y="334">Its risk</text>
+  </g>
+  <g fill="#1E1A16" font-size="14" text-anchor="middle">
+    <text x="334" y="134">Kuzari, Tanya</text>
+    <text x="334" y="184">A different soul</text>
+    <text x="334" y="234">Joins, but "not equal"</text>
+    <text x="334" y="284">Explains the closeness</text>
+    <text x="334" y="334">Rank by birth</text>
+    <text x="610" y="134">Rambam, Benamozegh</text>
+    <text x="610" y="184">A different job</text>
+    <text x="610" y="234">Can become holy of holies</text>
+    <text x="610" y="284">Explains the mission</text>
+    <text x="610" y="334">Just another tribe</text>
+  </g>
+</svg>
