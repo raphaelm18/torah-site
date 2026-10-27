@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Frank_Ruhl_Libre, IBM_Plex_Sans, Newsreader } from "next/font/google";
 import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { SiteHeader } from "@/components/SiteHeader";
 import { getSiteUrl, siteDescription, siteName } from "@/lib/site";
 import "./globals.css";
 
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <a className="skip" href="#content">
           Skip to content
         </a>
-        <Header />
+        <SiteHeader />
         <main id="content" className="column flex-1 pt-8 pb-16">
           {children}
         </main>

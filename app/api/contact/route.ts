@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { droppedAsSpam } from "@/lib/spam";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -8,13 +9,7 @@ function clean(value: FormDataEntryValue | null) {
 
 export async function POST(request: Request) {
   const form = await request.formData();
-  const website = String(form.get("website") ?? "").trim();
-  const loadedAt = Number(form.get("loadedAt"));
-  const elapsed = Date.now() - loadedAt;
-
-  if (website || !Number.isFinite(loadedAt) || loadedAt <= 0 || (elapsed >= 0 && elapsed < 3000)) {
-    return NextResponse.json({ ok: true });
-  }
+  if (droppedAsSpam(form)) return NextResponse.json({ ok: true });
 
   const name = clean(form.get("name"));
   const email = clean(form.get("email"));
@@ -62,6 +57,7 @@ export async function POST(request: Request) {
     headers: {
       Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json",
+      "User-Agent": "torah-site",
     },
     body: JSON.stringify({
       from,

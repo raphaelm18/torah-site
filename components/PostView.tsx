@@ -29,6 +29,8 @@ export function PostView({ post }: { post: Post }) {
       {post.subtitle ? <p className="subtitle">{post.subtitle}</p> : null}
       <p className="meta">
         <time dateTime={post.date}>{formatDate(post.date)}</time>
+        {" · "}
+        <Link href={`/writing/${post.slug}/edit`}>Edit</Link>
       </p>
 
       <aside className="box">

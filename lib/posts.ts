@@ -27,6 +27,7 @@ export type Post = {
   audio?: string;
   ideaMap?: string;
   status: PostStatus;
+  emailed: boolean;
   Content: PostContent;
 };
 
@@ -99,6 +100,16 @@ function buildPost(filename: string, raw: string): Post {
     throw new Error(`${filename}: part is set without a series`);
   }
 
+  const subscribers = data.subscribers;
+  if (
+    subscribers != null &&
+    subscribers !== "" &&
+    subscribers !== true &&
+    subscribers !== "yes"
+  ) {
+    throw new Error(`${filename}: subscribers must be "yes" or left off`);
+  }
+
   const audio = optionalString(data.audio, filename, "audio");
   const ideaMap = optionalString(data.ideaMap, filename, "ideaMap");
   for (const [field, value] of [
@@ -136,6 +147,7 @@ function buildPost(filename: string, raw: string): Post {
     audio,
     ideaMap,
     status,
+    emailed: status === "published" && (subscribers === true || subscribers === "yes"),
     Content: compiled,
   };
 }
@@ -183,6 +195,86 @@ export function getPublishedPosts() {
 
 export function getPublishedPost(slug: string) {
   return getPublishedPosts().find((post) => post.slug === slug);
+}
+
+export function getDraftPosts() {
+  return readPosts()
+    .filter((post) => post.status === "draft")
+    .sort(byNewest);
+}
+
+export type PostSource = {
+  slug: string;
+  title: string;
+  subtitle: string;
+  date: string;
+  track: string;
+  series: string;
+  part: string;
+  tldr: string;
+  audio: string;
+  ideaMap: string;
+  status: string;
+  subscribers: string;
+  body: string;
+};
+
+function asText(value: unknown) {
+  if (value instanceof Date && !Number.isNaN(value.getTime())) {
+    const month = String(value.getUTCMonth() + 1).padStart(2, "0");
+    const day = String(value.getUTCDate()).padStart(2, "0");
+    return `${value.getUTCFullYear()}-${month}-${day}`;
+  }
+  if (value == null) return "";
+  return String(value);
+}
+
+export function isSlug(value: string) {
+  return /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value);
+}
+
+export function getPostSource(slug: string): PostSource | undefined {
+  if (!isSlug(slug)) return undefined;
+  const file = path.join(POSTS_DIR, `${slug}.mdx`);
+  if (!fs.existsSync(file)) return undefined;
+  const { data, content } = matter(fs.readFileSync(file, "utf8"));
+  return {
+    slug,
+    title: asText(data.title),
+    subtitle: asText(data.subtitle),
+    date: asText(data.date),
+    track: asText(data.track),
+    series: asText(data.series),
+    part: asText(data.part),
+    tldr: asText(data.tldr),
+    audio: asText(data.audio),
+    ideaMap: asText(data.ideaMap),
+    status: asText(data.status),
+    subscribers: data.subscribers === true || data.subscribers === "yes" ? "yes" : "",
+    body: content.replace(/^\n/, "").replace(/\s+$/, ""),
+  };
+}
+
+export function serializePost(source: PostSource) {
+  const lines = [
+    `title: ${JSON.stringify(source.title)}`,
+    `subtitle: ${JSON.stringify(source.subtitle)}`,
+    `slug: ${source.slug}`,
+    `date: ${source.date}`,
+    `track: ${source.track}`,
+  ];
+  if (source.series) lines.push(`series: ${JSON.stringify(source.series)}`);
+  if (source.part) lines.push(`part: ${source.part}`);
+  lines.push(`tldr: ${JSON.stringify(source.tldr)}`);
+  if (source.audio) lines.push(`audio: ${source.audio}`);
+  if (source.ideaMap) lines.push(`ideaMap: ${source.ideaMap}`);
+  lines.push(`status: ${source.status}`);
+  if (source.subscribers === "yes") lines.push("subscribers: yes");
+  return `---\n${lines.join("\n")}\n---\n\n${source.body.trim()}\n`;
+}
+
+export function postPath(slug: string) {
+  return path.join(POSTS_DIR, `${slug}.mdx`);
 }
 
 export function postsWithAudio() {

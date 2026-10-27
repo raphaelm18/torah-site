@@ -17,6 +17,9 @@ const nextConfig: NextConfig = {
     "/writing/[slug]": ["./content/posts/**/*"],
     "/listen": ["./content/posts/**/*"],
     "/rss.xml": ["./content/posts/**/*"],
+    "/books": ["./content/books/**/*"],
+    "/writing/new": ["./content/posts/**/*"],
+    "/writing/[slug]/edit": ["./content/posts/**/*"],
   },
 };
 

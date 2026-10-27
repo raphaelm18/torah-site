@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import { PostRow } from "@/components/PostRow";
-import { getPublishedPosts, groupPosts } from "@/lib/posts";
+import { canEdit } from "@/lib/edit-auth";
+import { getDraftPosts, getPublishedPosts, groupPosts } from "@/lib/posts";
 import { tracks, type Track } from "@/lib/site";
 
 export const metadata = {
@@ -30,9 +31,15 @@ async function WritingIndex({
     active === "all" ? true : post.track === active,
   );
   const groups = groupPosts(posts);
+  const editing = await canEdit();
 
   return (
     <>
+      {editing ? (
+        <p className="edit-row">
+          <Link href="/writing/new">New piece</Link>
+        </p>
+      ) : null}
       <nav className="filters" aria-label="Filter by track">
         {filters.map((filter) => (
           <Link
@@ -52,7 +59,7 @@ async function WritingIndex({
           {groups.map((group) =>
             group.type === "post" ? (
               <ul className="post-list" key={group.post.slug}>
-                <PostRow post={group.post} />
+                <PostRow post={group.post} edit={editing} />
               </ul>
             ) : (
               <section className="series-block" key={group.name}>
@@ -62,6 +69,7 @@ async function WritingIndex({
                     <PostRow
                       key={post.slug}
                       post={post}
+                      edit={editing}
                       kicker={[
                         post.part ? `Part ${post.part}` : "Part",
                         tracks[post.track].label,
@@ -74,7 +82,23 @@ async function WritingIndex({
           )}
         </div>
       )}
+      {editing ? <Drafts /> : null}
     </>
+  );
+}
+
+function Drafts() {
+  const drafts = getDraftPosts();
+  if (drafts.length === 0) return null;
+  return (
+    <section className="section">
+      <h2 className="kicker series-name">Drafts</h2>
+      <ul className="post-list">
+        {drafts.map((post) => (
+          <PostRow key={post.slug} post={post} edit kicker="Draft" />
+        ))}
+      </ul>
+    </section>
   );
 }
 

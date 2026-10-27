@@ -47,6 +47,47 @@ The form does not send until both of these are set (locally in `.env.local`, or 
 
 Without them, submitting returns a clear error. A hidden field and a three-second delay drop the obvious spam. See `.env.example`.
 
+## Editing a piece
+
+Posts can be edited in the browser. **Edit** is next to the date on each piece, on the writing list, and in the footer. The first time, it asks for `EDIT_PASSWORD`.
+
+On this machine, Save writes `content/posts`. A production server (`next start`) will not show the change until you rebuild. `npm run dev` rereads the file.
+
+On Vercel, Save commits the file through GitHub. Set `GITHUB_TOKEN` and `GITHUB_REPO` (`owner/name`). Without them the live site refuses to save and says so. **On the site** makes a piece public. Leave **Email subscribers** off while you tinker. A draft stays off the site for everyone who is not signed in.
+
+Above the body, the buttons add a section, a quote, Hebrew, a wrestling question, sources, a link, or an image. Pasting an image into a box adds it too. The file still stores the marks the site needs.
+
+## Email when a post is ready
+
+The footer has a signup. It does nothing until both of these are set:
+
+- `RESEND_API_KEY`
+- `RESEND_SEGMENT_ID`
+
+Create a segment in Resend (the old “audience” lists are gone) and paste its id. Signups are added as contacts on that segment. Without the keys, the form returns a clear error.
+
+Putting a piece on the site does not email anyone. A push to `main` sends one email only when `subscribers: yes` is newly set on a published post. Later edits do not send again. Uncheck it, push, then check it again, and another note goes out. Titles that start with `Sample:` are skipped. The GitHub Action needs `RESEND_API_KEY`, `RESEND_SEGMENT_ID`, `CONTACT_FROM_EMAIL`, and `SITE_URL` as repository secrets. If those secrets are missing, the action logs that and does not fail the push.
+
+## Books
+
+`/books` is the shelf. It is empty until a file exists. When a pamphlet is ready, add `content/books/<slug>.mdx`:
+
+```md
+---
+title: "The pamphlet title"
+subtitle: "One line"
+summary: "The sentence on the shelf."
+status: forthcoming
+read: https://example.com/read
+ebook: https://example.com/book.epub
+print: https://example.com/order
+---
+
+What the book is, before anyone downloads it or orders a copy.
+```
+
+`status` is `forthcoming` or `available`. `read`, `ebook`, and `print` are optional links. Leave a field out until that way of getting the book exists.
+
 ## Locally
 
 ```bash
