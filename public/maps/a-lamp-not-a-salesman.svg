@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 444" fill="none" font-family="Georgia, serif">
+  <title>Three kinds of mitzvot, three ways to share them</title>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1E1A16"/></marker>
+  </defs>
+  <rect width="760" height="444" fill="#FBF8F3"/>
+  <text x="24" y="38" fill="#1E1A16" font-size="17" font-weight="bold">Three kinds of mitzvot, three ways to share them</text>
+  <g stroke="#1E1A16" stroke-width="1.25">
+    <rect x="24" y="64" width="224" height="276" rx="6"/>
+    <rect x="268" y="64" width="224" height="276" rx="6"/>
+  </g>
+  <rect x="512" y="64" width="224" height="276" rx="6" fill="#A2462A" fill-opacity="0.08" stroke="#A2462A" stroke-width="2"/>
+  <g fill="#1E1A16" font-size="16" font-weight="bold">
+    <text x="40" y="94">Universal</text>
+    <text x="284" y="94">Signs</text>
+    <text x="528" y="94">Polish</text>
+  </g>
+  <g fill="#1E1A16" font-size="14">
+    <text x="40" y="122">Noahide laws, kindness,</text>
+    <text x="40" y="140">prayer</text>
+    <text x="284" y="122">Shabbat, tefillin,</text>
+    <text x="284" y="140">brit milah</text>
+    <text x="528" y="122">Kashrut, shatnez,</text>
+    <text x="528" y="140">other chukim</text>
+  </g>
+  <g fill="#6B635A" font-size="12.5" font-style="italic">
+    <text x="40" y="182">For whom</text>
+    <text x="284" y="182">For whom</text>
+    <text x="528" y="182">For whom</text>
+    <text x="40" y="242">How we share it</text>
+    <text x="284" y="242">How we share it</text>
+    <text x="528" y="260">How we share it</text>
+  </g>
+  <g fill="#1E1A16" font-size="14">
+    <text x="40" y="202">Everyone</text>
+    <text x="284" y="202">The household</text>
+    <text x="528" y="202">Binding on us,</text>
+    <text x="528" y="220">good for anyone</text>
+    <text x="40" y="262">Openly, always</text>
+    <text x="284" y="262">Worn where people see</text>
+    <text x="528" y="280">When asked, as</text>
+    <text x="528" y="298">God's wisdom</text>
+  </g>
+  <path d="M380 344V372" stroke="#1E1A16" stroke-width="1.25" marker-end="url(#a)"/>
+  <text x="380" y="404" text-anchor="middle" fill="#1E1A16" font-size="15" font-weight="bold">A lamp, not a salesman: teach freely, impose nothing</text>
+</svg>
