@@ -1,0 +1,45 @@
+name: Narrate new posts
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - content/audio-scripts/**
+      - public/audio/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: narrate
+  cancel-in-progress: false
+
+jobs:
+  narrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/generate-audio.mjs
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          ELEVENLABS_MODEL_ID: ${{ vars.ELEVENLABS_MODEL_ID }}
+      - name: Commit new audio
+        run: |
+          if [ -z "$(git status --porcelain public/audio content/posts)" ]; then
+            echo "No new audio."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add public/audio content/posts
+          git commit -m "Add narration"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1

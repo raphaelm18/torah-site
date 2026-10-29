@@ -11,3 +11,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## This site
 
 Posts are one MDX file each in `content/posts`. `status: draft` is never rendered. Audio scripts in `content/audio-scripts` are never rendered. Colors, type, and the post anatomy live in `app/globals.css` and `components/PostView.tsx`. The contact form stays unsent until `RESEND_API_KEY` and `CONTACT_TO_EMAIL` are set.
+
+## Narration
+
+`.github/workflows/generate-audio.yml` runs `scripts/generate-audio.mjs` on pushes that touch `content/audio-scripts/` or `public/audio/`. A script at `content/audio-scripts/<slug>.md` that starts with `---\nstatus: ready\n---` is sent to ElevenLabs in pieces, saved as `public/audio/<slug>.mp3`, and the post gets `audio: /audio/<slug>.mp3`. Scripts without `status: ready` are never narrated. Delete an MP3 and push to regenerate it. It needs the GitHub secrets `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID`; the repository variable `ELEVENLABS_MODEL_ID` is optional (default `eleven_multilingual_v2`). Without the secrets it does nothing. Audio scripts are English-first: Hebrew only from the proven list.
