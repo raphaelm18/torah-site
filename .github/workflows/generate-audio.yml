@@ -23,20 +23,33 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Restore narrated pieces
+        uses: actions/cache/restore@v4
+        with:
+          path: .audio-cache
+          key: narration-${{ github.run_id }}
+          restore-keys: narration-
       - run: node scripts/generate-audio.mjs
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
           ELEVENLABS_MODEL_ID: ${{ vars.ELEVENLABS_MODEL_ID }}
+      - name: Save narrated pieces
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: .audio-cache
+          key: narration-${{ github.run_id }}
       - name: Commit new audio
         run: |
-          if [ -z "$(git status --porcelain public/audio content/posts)" ]; then
+          if [ -z "$(git status --porcelain public/audio content/posts content/audio-scripts/narrated.json)" ]; then
             echo "No new audio."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add public/audio content/posts
+          git add public/audio content/posts content/audio-scripts/narrated.json
           git commit -m "Add narration"
           for attempt in 1 2 3; do
             git pull --rebase origin main && git push origin HEAD:main && exit 0
