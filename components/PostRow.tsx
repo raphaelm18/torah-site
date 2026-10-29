@@ -17,7 +17,7 @@ export function PostRow({
     [
       tracks[post.track].label,
       post.series,
-      post.part ? `Part ${post.part}` : undefined,
+      post.part != null ? `Part ${post.part}` : undefined,
     ]
       .filter(Boolean)
       .join(" · ");

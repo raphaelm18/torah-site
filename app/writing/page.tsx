@@ -71,7 +71,7 @@ async function WritingIndex({
                       post={post}
                       edit={editing}
                       kicker={[
-                        post.part ? `Part ${post.part}` : "Part",
+                        post.part != null ? `Part ${post.part}` : "Part",
                         tracks[post.track].label,
                       ].join(" · ")}
                     />

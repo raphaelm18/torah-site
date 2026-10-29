@@ -36,7 +36,7 @@ export default function ListenPage() {
               <p className="kicker">
                 {tracks[post.track].label}
                 {post.series
-                  ? ` · ${post.series}${post.part ? ` · Part ${post.part}` : ""}`
+                  ? ` · ${post.series}${post.part != null ? ` · Part ${post.part}` : ""}`
                   : ""}
               </p>
               <Link className="title" href={`/writing/${post.slug}`}>
