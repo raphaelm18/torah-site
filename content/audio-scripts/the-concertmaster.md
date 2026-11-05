@@ -88,4 +88,3 @@ The ick I started with hasn't fully gone away. And I've stopped wanting it to. I
 
 Here's what I'm still wrestling with. First, Maimonides says the righteous of the nations earn their share by keeping their seven laws because God commanded them. Max doesn't fit that neatly, and I don't have a good answer yet. Second, is "concertmaster" just a nicer word for rank? I think the difference is service, but I want to keep testing it. And third, the one that needs its own episode. If keeping kosher really tunes a person to God, why only us? And if it could tune anyone, why aren't we at least teaching it?
 
-I want my boys to take the first chair seriously, and to notice when the person two seats over is playing more beautifully than they are.

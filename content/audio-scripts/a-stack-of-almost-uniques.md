@@ -64,4 +64,3 @@ So that's my stack. No single piece makes Judaism unique. And I've made peace wi
 
 Here's what I'm still wrestling with. First, which piece carries the most weight? Pull out peoplehood, or Shabbat, or the argument, and does the rest still stand? Second, the comparison with Islam. It's the test that matters most, and it's where my knowledge is thinnest. And third, recitation. We've gotten very good at arguing with the text. Have we gotten worse at simply saying it, with our whole heart?
 
-I'd like my boys to grow up knowing the whole stack is theirs.

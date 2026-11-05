@@ -10,7 +10,7 @@ Let's start with where I first ran into the other answer. The idea that we're si
 
 It was in a Tanya class. The Tanya is the founding book of Chabad. Its second chapter describes the Jew's soul as literally a part of God above. And the first chapter places the souls of the other nations on a lower source. It comes up almost right away. And the room often holds every kind of person. Religious, not religious, sometimes someone in the middle of converting. I've sat in those rooms. It lands hard.
 
-The teachers are usually warm, and they soften it well. But it's a heavy claim to drop on page two. And the room rarely hears that it's one voice in the tradition, not the only one. Imagine your first day at a new gym, and the trainer mentions that some people's muscles are made of different stuff. Maybe there's an argument for it. It just shouldn't come before the warm-up.
+The teachers I've learned it from are warm, and they handle it with care. But for someone with my background, the idea itself lands hard. And it's one voice in the tradition, not the only one.
 
 So I asked myself, isn't that just what persecution does to a people?
 
@@ -72,4 +72,3 @@ Here's what I'm still wrestling with. First, the firstborn reading. Is it honest
 
 And honestly, the orchestra answer feels a little too easy. The Torah doesn't call us one of God's children. It calls us His firstborn. So if we're in the orchestra, which seat is ours? And can you lose it? That's next time.
 
-I want my boys to grow up knowing they're firstborns with a job, and that their younger siblings are everywhere.

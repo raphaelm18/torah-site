@@ -28,7 +28,7 @@ In superiority. The idea that a Jew is worth more, just by being born. The sand 
 
 And that idea is in our books. The Tanya, the founding book of Chabad, describes the Jew as having a divine soul, a part of God above. It places the souls of the other nations on a lower source. And before the Tanya, a rabbi in Spain, Judah Halevi, made a version of the same claim. So I can't wave it off as a product of the pogroms. It's a real voice in the tradition.
 
-That said, I want to be fair about how it plays out. Chabad's love for every Jew is real, and it's often beautiful. Any Jew who walks in gets treated like family. My problem isn't the love. It's the part that says the Jew who behaves badly is still, at the level of the soul, finer than the kindest non-Jew down the street.
+That said, I want to be fair about how it plays out. Chabad's love for every Jew is real, and it's often beautiful. Any Jew who walks in gets treated like family. My question isn't with the love, or with any community. It's with one idea. That the Jew who behaves badly is still, at the level of the soul, finer than the kindest non-Jew down the street.
 
 Abraham earned his closeness to God. He searched, he argued, and he brought people close. Can his descendants just inherit that?
 
@@ -58,7 +58,7 @@ Rabbi Akiva says both things in one breath. Beloved is man, because he was creat
 
 We did. Look at American Jewish life, and you can see his sentence broken in half.
 
-On one side, the universalists kept "beloved is man." Repairing the world, helping everyone. And honestly, it's inspiring. It brings real honor to God's name. But sometimes the particular gets lost completely. I once knew a homeless Jewish woman in San Diego. She told me a Jewish agency offered her canned pork. That's one person's story, and I can't verify it. But it captures something. A Jewish institution that forgot it was Jewish.
+On one side, the universalists kept "beloved is man." Repairing the world, helping everyone. And honestly, it's inspiring. It brings real honor to God's name. But sometimes the particular gets lost completely. I once knew a homeless Jewish woman in San Diego. She told me a Jewish agency offered her canned pork. That's one person's story, and I can't verify it.
 
 On the other side, the religious kept "beloved is Israel." The charity goes to the synagogue, to Israel, to the Jewish poor. The circle stays tight. Meanwhile, Jewish law itself says to feed the non-Jewish poor, visit their sick, and bury their dead. The homeless people of San Diego are the poor of your city too.
 
@@ -78,4 +78,3 @@ Here's what I'm still wrestling with. First, if worth isn't by birth, why is mem
 
 And the biggest one. If the family has priority, it needs a purpose. Otherwise it's just a tribe. That's the next episode.
 
-I want my boys to love their family fiercely, and never think that makes them royalty.
