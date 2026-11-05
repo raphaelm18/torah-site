@@ -26,7 +26,7 @@ The Torah itself says yes. Esav sells his birthright for a bowl of lentil stew. 
 
 That's exactly the story early Christianity told about us. Israel lost the seat, and the church became the new Israel. I don't accept that, and I don't think the Torah allows it. Individuals can lose it, but the covenant with the people is stated as unbreakable. Even in exile, God says, I won't reject them, and I won't break My covenant with them. And Jeremiah ties it to the sun and the moon. As long as they keep their order, Israel remains a nation before God.
 
-So here's where I land, and I know it cuts both ways. The seat is real and permanent for the people. For each one of us, it isn't automatic. It's what a teacher of mine taught me, that I wrote about in part two. Birth makes you Jewish, but you earn the name Israel. You can be born into the family and still not be doing the job.
+So here's where I land, and I know it cuts both ways. The seat is real and permanent for the people. For each one of us, it isn't automatic. It's what my teacher Rav Guy taught me, that I talked about in part two. Birth makes you Jewish, but you earn the name Israel. You can be born into the family and still not be doing the job.
 
 So then, where does my friend Max sit?
 

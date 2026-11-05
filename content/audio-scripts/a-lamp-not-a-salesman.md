@@ -8,7 +8,7 @@ Quick reminder of two things from part three. I described Israel as God's firstb
 
 Let's start with my own objection. If these mitzvot tune the player, wouldn't they tune my friend Max too?
 
-Oof, that's a hard question. My gut answer comes from a teacher of mine, a Kabbalist. He always describes the soul as a lens. When we do certain things, the lens gets a little dirtier, and the light doesn't come through as strong. So you have to polish it. That's what the mitzvot do. They polish the lens.
+Oof, that's a hard question. My gut answer comes from my teacher Rav Guy, the Kabbalist I talked about in part two. He always describes the soul as a lens. When we do certain things, the lens gets a little dirtier, and the light doesn't come through as strong. So you have to polish it. That's what the mitzvot do. They polish the lens.
 
 You can even guess at how. Take the law against wearing wool and linen together. Wool comes from an animal, and linen comes from a plant. Maybe the Torah doesn't want those two worlds blurred together on your body. Or meat and milk. Milk feeds a life, and meat comes from a death. These are my guesses, not reasons I received. But if the polish is real, it's hard to see why it would stop at Max.
 

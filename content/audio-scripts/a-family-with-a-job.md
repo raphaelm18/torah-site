@@ -38,7 +38,7 @@ At Sinai, God calls us a kingdom of priests and a holy nation. Most traditions p
 
 And the light spreads by being seen, not by being preached. Moshe says, keep these laws, and the nations will look at you and say, what a wise and understanding people.
 
-A teacher of mine, a Kabbalist, once told me there's a difference in the Zohar between being Jewish and being Israel. I haven't found the passage, so take this as something I learned, not a citation. His point was that birth makes you Jewish. But you earn the name Israel. With kindness, with the mitzvot, with a life pointed at God.
+My teacher Rav Guy, a Kabbalist and a good friend, taught me an idea from the Zohar. There's a difference between being Jewish and being Israel. His point was that birth makes you Jewish. But you earn the name Israel. With kindness, with the mitzvot, with a life pointed at God.
 
 That doesn't make levels of Jews. The founder of Hasidism, and the whole movement after him, fought exactly that. They defended the simple Jew against scholars who looked down on him. A great Jew isn't the one who knows the most Talmud. It's the one with faith in God, good character, and love for the mitzvot.
 
@@ -60,7 +60,7 @@ Fine. But does not mixing milk and meat really make us a brighter light to the n
 
 Oof, that's the question I keep coming back to. A lot of our practice, especially the rabbinic layers, doesn't look like light to anyone outside. Nobody walks past a kosher kitchen and feels inspired.
 
-The answer I've learned from Kabbalah, and I kind of buy it, is that the mitzvot work on the channel, not the light. A teacher of mine, a Kabbalist, called it zikuch, refining. The mitzvot polish us, so God's light shines through more brightly. The light is God's. The practice is the polish. <break time="1.0s" /> So more of Him comes through in how we act, how we speak, and how we treat people.
+The answer I've learned from Kabbalah, and I kind of buy it, is that the mitzvot work on the channel, not the light. Rav Guy called it zikuch, refining. The mitzvot polish us, so God's light shines through more brightly. The light is God's. The practice is the polish. <break time="1.0s" /> So more of Him comes through in how we act, how we speak, and how we treat people.
 
 I can't prove that. But it rings true to me. And it means the test of the practice isn't the practice itself. It's whether the people on the other side of the window see more light.
 
