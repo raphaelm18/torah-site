@@ -14,7 +14,7 @@ The teachers I've learned it from are warm, and they handle it with care. But fo
 
 So I asked myself, isn't that just what persecution does to a people?
 
-Partly, and I don't want to skip that. Ideas grow in soil. For most of the last thousand years, Jews lived as second-class citizens, in Christian Europe and under Islam. In Europe especially, they were massacred in the Crusades, and later in the pogroms. By neighbors who called themselves religious, and acted with cruelty. Think about it. If you're the kid getting beaten up on the playground every day, it's very hard to believe the bully carries the same divine spark you do.
+Partly, and I don't want to skip that. Ideas grow in soil. For most of the last thousand years, Jews lived as second-class citizens, in Christian Europe and under Islam. In Europe especially, they were massacred in the Crusades, and later in the pogroms. By neighbors who called themselves religious, and acted with cruelty. Think about it. If you're the kid getting bullied on the playground every day, it's very hard to believe the bully carries the same divine spark you do.
 
 But history doesn't explain all of it. Judah Halevi wrote the Kuzari in Spain, around the year eleven forty. He wrote it in Arabic, in one of the most learned cultures of its time. And in it, the rabbi tells the king that converts will share in Israel's good fortune, but won't be equal to born Jews. That said, Halevi wasn't writing from comfort either. The book's Arabic title calls Judaism the despised religion. So the different-soul voice is older than the pogroms. But it has always been the voice of a people under pressure. To me, the history doesn't make the idea false. It explains why it got so loud.
 
@@ -30,13 +30,13 @@ But wait. The Torah does call us God's children. Isn't that closeness real?
 
 It is, and I won't pretend otherwise. The Torah says, you are children of the Lord your God. And Rabbi Akiva says Israel is beloved for being called God's children, and even more beloved because it was told so. There's an intimacy in the Jewish relationship with God that the job idea can't just explain away. I'll be honest, I don't fully know where I land on it.
 
-Here's the reading I'm trying on. And it's my read, not something I received. When God first names Israel to Pharaoh, He says, Israel is My son, My firstborn. Firstborn. That word only makes sense if there are other children. Anyone with more than one kid knows the oldest gets a different kind of closeness. More responsibility, more expectations, sometimes a key to the house. And nobody thinks it means the younger ones are loved less.
+Here's the reading I'm trying on. And it's my read, not something I received. When God first names Israel to Pharaoh, He says, Israel is My son, My firstborn. Firstborn. That word only makes sense if there are other children. Anyone with more than one kid knows the oldest gets a different kind of closeness. More responsibility, more expectations. And nobody thinks it means the younger ones are loved less.
 
 So if the firstborn has a job, what is it?
 
 At Sinai, God calls us a kingdom of priests and a holy nation. Most traditions produce holy people. The Torah tries for something harder, a holy people. A whole society built around God. A weekly day of rest, charity written into law, and the stranger protected.
 
-And the light spreads by being seen, not by being preached. Moses says, keep these laws, and the nations will look at you and say, what a wise and understanding people. Think of a house with its lights on at night. Nobody has to knock on doors. People walk by and see what's inside.
+And the light spreads by being seen, not by being preached. Moses says, keep these laws, and the nations will look at you and say, what a wise and understanding people.
 
 A teacher of mine, a Kabbalist, once told me there's a difference in the Zohar between being Jewish and being Israel. I haven't found the passage, so take this as something I learned, not a citation. His point was that birth makes you Jewish. But you earn the name Israel. With kindness, with the commandments, with a life pointed at God.
 
@@ -60,7 +60,7 @@ Fine. But does not mixing milk and meat really make us a brighter light to the n
 
 Oof, that's the question I keep coming back to. A lot of our practice, especially the rabbinic layers, doesn't look like light to anyone outside. Nobody walks past a kosher kitchen and feels inspired.
 
-The answer I've learned from Kabbalah, and I kind of buy it, is that the commandments work on the channel, not the light. Picture a window. The glass doesn't make the sunlight. But clean glass lets more of it through, and a smudged window dims a sunny day. The light is God's. The practice is how we keep the glass clean. So more of Him comes through in how we act, how we speak, and how we treat people.
+The answer I've learned from Kabbalah, and I kind of buy it, is that the mitzvot work on the channel, not the light. A teacher of mine, a Kabbalist, called it zikuch, refining. The mitzvot polish us, so God's light shines through more brightly. The light is God's. The practice is the polish. So more of Him comes through in how we act, how we speak, and how we treat people.
 
 I can't prove that. But it rings true to me. And it means the test of the practice isn't the practice itself. It's whether the people on the other side of the window see more light.
 

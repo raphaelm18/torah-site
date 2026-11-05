@@ -64,7 +64,7 @@ The crazy thing is, that sounds a lot like the firstborn. That's because it's th
 
 So what actually changes?
 
-Here I'm talking to my fellow religious Jews. Think about your typical Torah class. A lot of commentary on commentary. It's interesting, and it's deep, and I'm not trying to put it down. But it's written for the people already in the room. Over the centuries we built a bunker, and we had good reasons. But Isaiah calls us a light to the nations, and a bunker can't be that.
+Here I'm talking to my fellow religious Jews. Think about your typical Torah class. A lot of commentary on commentary. It's interesting, and it's deep, and I'm not trying to put it down. But it's written for the people already in the room. Over the centuries we built a bubble, and we had good reasons. But Isaiah calls us a light to the nations, and a bubble can't be that.
 
 So what does it look like in practice? A few things.
 
@@ -76,7 +76,7 @@ Third, teach the why, not the trivia. Nobody outside wants a detailed explanatio
 
 And there's one more, the one I care about most. We give at least ten percent of our money to charity. If you're someone who learns Torah all day, give a real share of your Torah, too, to people outside the room. Teach people who know less than you do. Call it a teaching tithe. That one's my own idea, not a law.
 
-A lamp doesn't recruit anyone. It just has to be lit where people can see it.
+A lamp doesn't chase anyone. It just has to be lit where people can see it.
 
 And here's the part that surprised me. Teaching the why to outsiders makes it deeper for us. The day you explain keeping kosher to a coworker, it stops being an interesting commentary. It becomes, ah, now I understand a reason why we do this. Sharing the light polishes your own lens.
 

@@ -62,11 +62,11 @@ Wait. Doesn't that make the firstborn the goody two-shoes?
 
 Here's what's tricky. In a culture that loves rebels, "the one who keeps Dad's rules" sounds pretty lame. But this family was founded by a rebel. The midrash has Abraham smashing his father's idols. And he left home for a land he'd never seen. The rules came after, so the rebellion could survive three thousand years, instead of burning out in one lifetime. Rebels without structure usually last one generation.
 
-And our firstborn doesn't just obey. He argues. Abraham bargains with God over Sodom. When Israel builds the golden calf, God tells Moses, leave Me alone, so I can destroy them. And the Talmud asks, why would God need Moses to leave Him alone? Unless the door was open for Moses to push back. Every parent knows that moment. You make a rule, your kid argues it well, and you're not just persuaded. You're proud of how they got there. Max argues with God too. Which tells me this isn't something only the firstborn gets to do.
+And our firstborn doesn't just obey. He argues. Abraham bargains with God over Sodom. When Israel builds the golden calf, God tells Moses, leave Me alone, so I can destroy them. And the Talmud asks, why would God need Moses to leave Him alone? Unless the door was open for Moses to push back. I know that moment from my oldest. When he pushes back on a rule with good reasoning, I'm not just persuaded. I'm proud of how he got there. Max argues with God too. Which tells me this isn't something only the firstborn gets to do.
 
-Where Judaism goes flat isn't the rules. It's the person who studies Talmud because everyone does, and prays three times a day without any real intention behind it. That's a firstborn who got dressed, and then fell back asleep.
+Where Judaism goes flat isn't the rules. It's the person who studies Talmud because everyone does, and prays three times a day without any real intention behind it. That's a firstborn who gets dressed first, and then gets distracted.
 
-That also helps me with some of the commandments that have no obvious reason. Shabbat and tefillin are each called a sign of the covenant. A sign belongs to a relationship, like a wedding ring. The ring doesn't make a marriage loving. And a friend who wore yours wouldn't get closer to your wife. So the signs tune the firstborn's instrument, for the firstborn's part. Max has his own tuning, and from what I've seen, it works.
+That also helps me with some of the commandments that have no obvious reason. Shabbat and tefillin are each called a sign of the covenant. A sign belongs to a relationship, like a wedding ring. The ring doesn't make a marriage loving. But it marks whose you are. So the signs tune the firstborn's instrument, for the firstborn's part. Max has his own tuning, and from what I've seen, it works.
 
 So then, why is being commanded supposed to be better? Max chooses all of it freely.
 
