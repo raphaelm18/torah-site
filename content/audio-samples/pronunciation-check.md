@@ -1,5 +1,5 @@
 ---
-status: ready
+status: draft
 ---
 
 This is a pronunciation check. Each word comes after its number.
