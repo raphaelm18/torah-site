@@ -8,6 +8,7 @@ on:
       - content/audio-samples/**
       - content/pronunciation/**
       - public/audio/**
+      - narration.config.json
   workflow_dispatch:
 
 permissions:

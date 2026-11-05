@@ -25,7 +25,14 @@ import fs from "node:fs";
 import path from "node:path";
 
 const API_KEY = process.env.ELEVENLABS_API_KEY || "";
-const VOICE_ID = process.env.ELEVENLABS_VOICE_ID || "";
+function configuredVoice() {
+  try {
+    return JSON.parse(fs.readFileSync("narration.config.json", "utf8")).voiceId || "";
+  } catch {
+    return "";
+  }
+}
+const VOICE_ID = configuredVoice() || process.env.ELEVENLABS_VOICE_ID || "";
 const MODEL_ID = process.env.ELEVENLABS_MODEL_ID || "eleven_multilingual_v2";
 const OUTPUT_FORMAT = "mp3_44100_128";
 const MIN_CHUNK_CHARS = 1000; // a piece may end at a natural break once it's this long

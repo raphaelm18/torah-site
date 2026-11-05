@@ -1,0 +1,4 @@
+{
+  "voiceId": "Fxs4B7ptSwrFaxq3kDGG",
+  "note": "ElevenLabs voice used for narration (not a secret). Overrides the ELEVENLABS_VOICE_ID secret. The API key stays a GitHub secret."
+}
