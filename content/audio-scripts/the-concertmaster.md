@@ -8,21 +8,21 @@ So if we're in the orchestra, which seat is ours?
 
 First, I pushed back on my own picture. Doesn't the orchestra just make us one more group? If every people has its instrument, the Amish their violas, another faith its brass section, then Israel starts to sound like one more club with good traditions. And that isn't what the Torah says.
 
-Inside our own sources, being the firstborn isn't up for debate. God says, Israel is My son, My firstborn. We're called a treasured people. And Moses is careful about why. Not because you were bigger than other nations. You were the smallest. It's because God loved you, and kept His promise to your fathers. And at Sinai, it comes with a telling clause. You'll be My treasure among all the peoples, because all the earth is Mine.
+Inside our own sources, being the firstborn isn't up for debate. God says, Israel is My son, My firstborn. We're called a treasured people. And Moshe is careful about why. Not because you were bigger than other nations. You were the smallest. It's because God loved you, and kept His promise to your fathers. And at Sinai, it comes with a telling clause. You'll be My treasure among all the peoples, because all the earth is Mine.
 
-So the question isn't whether we're the firstborn. It's what a firstborn is.
+So the question isn't whether we're the firstborn. It's what a firstborn is. <break time="1.0s" />
 
 Okay. So what does a firstborn actually do?
 
 The Torah answers this. Originally, the firstborn sons were the priests. They did the service in the Temple, until the Levites took their place. The firstborn also inherits a double portion. And in any real family, that comes with double the responsibility. So when God calls Israel "My firstborn" in Egypt, and then "a kingdom of priests" at Sinai, He's saying the same thing twice. The firstborn is the family's priest.
 
-Put that in the orchestra, and you get the concertmaster. The first violin, first chair. The concertmaster leads the tuning before the music starts, and the rest of the orchestra looks to that seat. It's a real role. But nobody thinks the concertmaster is the only instrument, or even the best player in the room. The seat exists for the sake of the whole orchestra.
+Put that in the orchestra, and you get the concertmaster. The first violin, first chair. The concertmaster leads the tuning before the music starts, and the rest of the orchestra looks to that seat. It's a real role. But nobody thinks the concertmaster is the only instrument, or even the best player in the room. The seat exists for the sake of the whole orchestra. <break time="1.0s" />
 
 That gives me a ranking of role with no ranking of soul. I don't have to give up the closeness. And I don't have to make anyone else smaller. The concertmaster doesn't play louder than everyone else. The job is to get everyone in tune.
 
 But can't you lose the first chair?
 
-The Torah itself says yes. Esau sells his birthright for a bowl of lentil stew. Reuben loses his, and it passes to Joseph's sons. A firstborn who treats the seat like a trophy can end up watching someone else sit in it.
+The Torah itself says yes. Esav sells his birthright for a bowl of lentil stew. Reuven loses his, and it passes to Yosef's sons. A firstborn who treats the seat like a trophy can end up watching someone else sit in it.
 
 That's exactly the story early Christianity told about us. Israel lost the seat, and the church became the new Israel. I don't accept that, and I don't think the Torah allows it. Individuals can lose it, but the covenant with the people is stated as unbreakable. Even in exile, God says, I won't reject them, and I won't break My covenant with them. And Jeremiah ties it to the sun and the moon. As long as they keep their order, Israel remains a nation before God.
 
@@ -60,31 +60,31 @@ And the younger siblings have things to teach. In my house, the one who runs to 
 
 Wait. Doesn't that make the firstborn the goody two-shoes?
 
-Here's what's tricky. In a culture that loves rebels, "the one who keeps Dad's rules" sounds pretty lame. But this family was founded by a rebel. The midrash has Abraham smashing his father's idols. And he left home for a land he'd never seen. The rules came after, so the rebellion could survive three thousand years, instead of burning out in one lifetime. Rebels without structure usually last one generation.
+Here's what's tricky. In a culture that loves rebels, "the one who keeps Dad's rules" sounds pretty lame. But this family was founded by a rebel. The midrash has Avraham smashing his father's idols. And he left home for a land he'd never seen. The rules came after, so the rebellion could survive three thousand years, instead of burning out in one lifetime. Rebels without structure usually last one generation.
 
-And our firstborn doesn't just obey. He argues. Abraham bargains with God over Sodom. When Israel builds the golden calf, God tells Moses, leave Me alone, so I can destroy them. And the Talmud asks, why would God need Moses to leave Him alone? Unless the door was open for Moses to push back. I know that moment from my oldest. When he pushes back on a rule with good reasoning, I'm not just persuaded. I'm proud of how he got there. Max argues with God too. Which tells me this isn't something only the firstborn gets to do.
+And our firstborn doesn't just obey. He argues. Avraham bargains with God over Sodom. When Israel builds the golden calf, God tells Moshe, leave Me alone, so I can destroy them. And the Talmud asks, why would God need Moshe to leave Him alone? Unless the door was open for Moshe to push back. I know that moment from my oldest. When he pushes back on a rule with good reasoning, I'm not just persuaded. I'm proud of how he got there. Max argues with God too. Which tells me this isn't something only the firstborn gets to do.
 
 Where Judaism goes flat isn't the rules. It's the person who studies Talmud because everyone does, and prays three times a day without any real intention behind it. That's a firstborn who gets dressed first, and then gets distracted.
 
-That also helps me with some of the commandments that have no obvious reason. Shabbat and tefillin are each called a sign of the covenant. A sign belongs to a relationship, like a wedding ring. The ring doesn't make a marriage loving. But it marks whose you are. So the signs tune the firstborn's instrument, for the firstborn's part. Max has his own tuning, and from what I've seen, it works.
+That also helps me with some of the mitzvot that have no obvious reason. Shabbat and tefillin are each called a sign of the covenant. A sign belongs to a relationship, like a wedding ring. The ring doesn't make a marriage loving. But it marks whose you are. So the signs tune the firstborn's instrument, for the firstborn's part. Max has his own tuning, and from what I've seen, it works.
 
 So then, why is being commanded supposed to be better? Max chooses all of it freely.
 
 The Talmud says it straight out. Greater is the one who is commanded and does, than the one who isn't commanded and does. I've heard that line my whole life. And I don't think quoting it settles anything. You can always find a counter-quote. So I want to work out why it's true.
 
-The usual answer is that inspiration fades, and obligation keeps you going when it does. Fair. But that's a practical reason. To me, from first principles, it comes down to humility. Doing something because you were told to means you're taking instruction. You're not a cowboy riding your own trail to God. You're a kid again, and Dad said so. And that's the right posture for a human being in front of God. Feeling like a child before Him isn't a step down. It's just accurate.
+The usual answer is that inspiration fades, and obligation keeps you going when it does. Fair. But that's a practical reason. To me, from first principles, it comes down to humility. Doing something because you were told to means you're taking instruction. You're not a cowboy riding your own trail to God. You're a kid again, and Dad said so. And that's the right posture for a human being in front of God. Feeling like a child before Him isn't a step down. It's just accurate. <break time="1.0s" />
 
-That said, I have to push back on myself, because the Torah does. In Deuteronomy, the curses come because you didn't serve God with joy and a glad heart. Not because we didn't serve. Because we served without joy. And Isaiah has God asking what He needs all their sacrifices for. Being commanded with an empty heart can be worse than serving with a full one and no command at all. And watching Max play for sick kids, I believe that.
+That said, I have to push back on myself, because the Torah does. In Devarim, the book of Deuteronomy, the curses come because you didn't serve God with joy and a glad heart. Not because we didn't serve. Because we served without joy. And Isaiah has God asking what He needs all their sacrifices for. Being commanded with an empty heart can be worse than serving with a full one and no command at all. And watching Max play for sick kids, I believe that.
 
 The Talmud gives the empty one a way back. Doing it for the wrong reasons leads to doing it for the right ones. The person who keeps the practice without feeling it is still holding the vessel. So the heart has somewhere to come back to.
 
 So I don't think I need to rank them. The best is clear. Commanded, and alive. Next to it are two other paths with real worth. One is the firstborn who isn't there yet, but is holding the vessel and trying. The other is Max's. A full heart, with no obligation. And I won't call that the lesser road. Max is more alive with God than most of us who were commanded.
 
-The firstborn's job isn't to follow the rules. It's to keep them alive.
+The firstborn's job isn't to follow the rules. It's to keep them alive. <break time="1.0s" />
 
 So where does that leave us? Back where Rabbi Akiva started. Beloved is man, created in God's image. Beloved is Israel, called God's children. Both halves at once. We have a real seat, the firstborn's. Get dressed first, keep the house rules, keep them alive, and argue with Dad when it matters. And the house is full of siblings, some of whom remind us what a full heart looks like.
 
-The ick I started with hasn't fully gone away. And I've stopped wanting it to. It's what it feels like to hold both halves of that sentence at the same time. I'd rather feel it than drop one.
+The ick I started with hasn't fully gone away. And I've stopped wanting it to. It's what it feels like to hold both halves of that sentence at the same time. I'd rather feel it than drop one. <break time="1.0s" />
 
-Here's what I'm still wrestling with. First, Maimonides says the righteous of the nations earn their share by keeping their seven laws because God commanded them. Max doesn't fit that neatly, and I don't have a good answer yet. Second, is "concertmaster" just a nicer word for rank? I think the difference is service, but I want to keep testing it. And third, the one that needs its own episode. If keeping kosher really tunes a person to God, why only us? And if it could tune anyone, why aren't we at least teaching it?
+Here's what I'm still wrestling with. First, the Rambam says the righteous of the nations earn their share by keeping their seven laws because God commanded them. Max doesn't fit that neatly, and I don't have a good answer yet. Second, is "concertmaster" just a nicer word for rank? I think the difference is service, but I want to keep testing it. And third, the one that needs its own episode. If keeping kosher really tunes a person to God, why only us? And if it could tune anyone, why aren't we at least teaching it?
 
