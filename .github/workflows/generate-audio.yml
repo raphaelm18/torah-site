@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - content/audio-scripts/**
+      - content/audio-samples/**
+      - content/pronunciation/**
       - public/audio/**
   workflow_dispatch:
 
@@ -43,13 +45,13 @@ jobs:
           key: narration-${{ github.run_id }}
       - name: Commit new audio
         run: |
-          if [ -z "$(git status --porcelain public/audio content/posts content/audio-scripts/narrated.json)" ]; then
+          if [ -z "$(git status --porcelain public/audio content/posts content/audio-scripts content/pronunciation)" ]; then
             echo "No new audio."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add public/audio content/posts content/audio-scripts/narrated.json
+          git add -A public/audio content/posts content/audio-scripts content/pronunciation
           git commit -m "Add narration"
           for attempt in 1 2 3; do
             git pull --rebase origin main && git push origin HEAD:main && exit 0

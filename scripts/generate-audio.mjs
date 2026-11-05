@@ -37,6 +37,10 @@ const POSTS_DIR = "content/posts";
 const AUDIO_DIR = "public/audio";
 const CACHE_DIR = ".audio-cache";
 const MANIFEST = path.join(SCRIPTS_DIR, "narrated.json");
+const SAMPLES_DIR = "content/audio-samples"; // test recordings, e.g. the pronunciation check
+const SAMPLES_OUT = "public/audio/samples";
+const DICT_TSV = "content/pronunciation/hebrew.tsv"; // word<TAB>how to say it
+const DICT_STATE = "content/pronunciation/dictionary.json"; // the dictionary's id and version in ElevenLabs
 
 function log(message) {
   console.log(`[audio] ${message}`);
@@ -106,13 +110,101 @@ function chunk(body) {
   return pieces;
 }
 
+// ---- Pronunciation dictionary ----
+// content/pronunciation/hebrew.tsv lists Hebrew words and how to say them. It is saved to
+// ElevenLabs as a dictionary of alias rules and applied to every narration. Only the
+// entries a piece actually uses count toward its cache key, so fixing one word
+// re-narrates only the pieces (and episodes) that contain that word.
+
+function readRules() {
+  if (!fs.existsSync(DICT_TSV)) return [];
+  return fs
+    .readFileSync(DICT_TSV, "utf8")
+    .split("\n")
+    .filter((line) => line.trim() && !line.startsWith("#"))
+    .map((line) => {
+      const [word, alias] = line.split("\t").map((x) => (x || "").trim());
+      return { word, alias };
+    })
+    .filter((rule) => rule.word && rule.alias);
+}
+
+const RULES = readRules();
+
+function escapeRegex(text) {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function rulesIn(text) {
+  return RULES.filter((rule) =>
+    new RegExp(`(^|[^\\p{L}])${escapeRegex(rule.word)}(?=$|[^\\p{L}])`, "iu").test(text),
+  )
+    .map((rule) => `${rule.word}=${rule.alias}`)
+    .join("\n");
+}
+
+let dictionaryLocators = null;
+
+async function saveDictionary(state, create) {
+  const url = create
+    ? "https://api.elevenlabs.io/v1/pronunciation-dictionaries/add-from-rules"
+    : `https://api.elevenlabs.io/v1/pronunciation-dictionaries/${encodeURIComponent(state.id)}/set-rules`;
+  const body = {
+    rules: RULES.map((rule) => ({
+      type: "alias",
+      string_to_replace: rule.word,
+      alias: rule.alias,
+      case_sensitive: false,
+      word_boundaries: true,
+    })),
+  };
+  if (create) body.name = "Torah site Hebrew";
+  return fetch(url, {
+    method: "POST",
+    headers: { "xi-api-key": API_KEY, "Content-Type": "application/json", Accept: "application/json" },
+    body: JSON.stringify(body),
+  });
+}
+
+// Makes sure ElevenLabs has the current dictionary. Runs only when something is about to
+// be narrated, so a push that narrates nothing never touches the API.
+async function ensureDictionary() {
+  if (dictionaryLocators !== null) return dictionaryLocators;
+  if (!RULES.length) return (dictionaryLocators = []);
+  const hash = sha(JSON.stringify(RULES));
+  let state = {};
+  try {
+    state = JSON.parse(fs.readFileSync(DICT_STATE, "utf8"));
+  } catch {}
+  if (!state.id || state.hash !== hash) {
+    let response = await saveDictionary(state, !state.id);
+    if (response.status === 404 && state.id) response = await saveDictionary(state, true);
+    if (!response.ok) {
+      const detail = await response.text();
+      throw new Error(
+        `Could not save the pronunciation dictionary to ElevenLabs (${response.status}). ` +
+          `The API key probably needs "Pronunciation Dictionaries" set to Write. ${detail.slice(0, 300)}`,
+      );
+    }
+    const data = await response.json();
+    state = { id: data.id || state.id, version_id: data.version_id, hash };
+    fs.writeFileSync(DICT_STATE, `${JSON.stringify(state, null, 2)}\n`);
+    log(`Pronunciation dictionary saved (${RULES.length} words).`);
+  }
+  dictionaryLocators = [{ pronunciation_dictionary_id: state.id, version_id: state.version_id }];
+  return dictionaryLocators;
+}
+
 function cacheFile(text) {
-  return path.join(CACHE_DIR, `${sha(`${MODEL_ID}\n${VOICE_ID}\n${OUTPUT_FORMAT}\n${text}`)}.mp3`);
+  const key = `${MODEL_ID}\n${VOICE_ID}\n${OUTPUT_FORMAT}\n${rulesIn(text)}\n${text}`;
+  return path.join(CACHE_DIR, `${sha(key)}.mp3`);
 }
 
 async function speak(text, previousText, nextText) {
   const url = `https://api.elevenlabs.io/v1/text-to-speech/${encodeURIComponent(VOICE_ID)}?output_format=${OUTPUT_FORMAT}`;
   const body = { text, model_id: MODEL_ID };
+  const locators = await ensureDictionary();
+  if (locators.length) body.pronunciation_dictionary_locators = locators;
   if (previousText) body.previous_text = previousText.slice(-1000);
   if (nextText) body.next_text = nextText.slice(0, 1000);
   for (let attempt = 1; attempt <= 3; attempt++) {
@@ -161,46 +253,67 @@ function readManifest() {
   }
 }
 
+function readyBody(file) {
+  const { meta, body } = splitFrontmatter(fs.readFileSync(file, "utf8"));
+  return isReady(meta) ? body : null;
+}
+
+// Everything that could be narrated: episodes (one per post) and test samples.
+function jobs() {
+  const list = [];
+  if (fs.existsSync(SCRIPTS_DIR)) {
+    for (const name of fs.readdirSync(SCRIPTS_DIR).sort()) {
+      if (!name.endsWith(".md")) continue;
+      const slug = name.replace(/\.md$/, "");
+      const postFile = path.join(POSTS_DIR, `${slug}.mdx`);
+      if (!fs.existsSync(postFile)) continue;
+      const body = readyBody(path.join(SCRIPTS_DIR, name));
+      if (body !== null) list.push({ key: slug, body, postFile, mp3File: path.join(AUDIO_DIR, `${slug}.mp3`) });
+    }
+  }
+  if (fs.existsSync(SAMPLES_DIR)) {
+    for (const name of fs.readdirSync(SAMPLES_DIR).sort()) {
+      if (!name.endsWith(".md")) continue;
+      const slug = name.replace(/\.md$/, "");
+      const body = readyBody(path.join(SAMPLES_DIR, name));
+      if (body !== null) list.push({ key: `sample:${slug}`, body, postFile: null, mp3File: path.join(SAMPLES_OUT, `${slug}.mp3`) });
+    }
+  }
+  return list;
+}
+
 async function main() {
-  if (!fs.existsSync(SCRIPTS_DIR)) return;
   const manifest = readManifest();
   const keep = new Set();
   const made = [];
   let creditsUsed = 0;
   const hasKeys = Boolean(API_KEY && VOICE_ID);
   if (!hasKeys) log("ELEVENLABS_API_KEY or ELEVENLABS_VOICE_ID is not set; nothing will be narrated.");
-  fs.mkdirSync(AUDIO_DIR, { recursive: true });
   fs.mkdirSync(CACHE_DIR, { recursive: true });
 
-  for (const name of fs.readdirSync(SCRIPTS_DIR).sort()) {
-    if (!name.endsWith(".md")) continue;
-    const slug = name.replace(/\.md$/, "");
-    const postFile = path.join(POSTS_DIR, `${slug}.mdx`);
-    const mp3File = path.join(AUDIO_DIR, `${slug}.mp3`);
-    if (!fs.existsSync(postFile)) continue;
-
-    const { meta, body } = splitFrontmatter(fs.readFileSync(path.join(SCRIPTS_DIR, name), "utf8"));
-    if (!isReady(meta)) continue;
+  for (const job of jobs()) {
+    const { key, body, postFile, mp3File } = job;
     if (body.length > MAX_SCRIPT_CHARS) {
-      log(`${slug}: script is ${body.length} characters, over the ${MAX_SCRIPT_CHARS} safety limit; skipped.`);
+      log(`${key}: script is ${body.length} characters, over the ${MAX_SCRIPT_CHARS} safety limit; skipped.`);
       continue;
     }
 
     const parts = chunk(body);
     for (const part of parts) keep.add(path.basename(cacheFile(part)));
 
-    const version = sha(body);
+    // The version covers the text and the dictionary entries it uses.
+    const version = sha(`${body}\n--\n${rulesIn(body)}`);
     const hasMp3 = fs.existsSync(mp3File);
-    if (hasMp3 && !manifest[slug]) {
-      // Narrated before this manifest existed: treat the current MP3 as matching.
-      manifest[slug] = version;
+    if (hasMp3 && (!manifest[key] || manifest[key] === sha(body))) {
+      // Narrated before this version scheme (or before the manifest): treat the MP3 as current.
+      manifest[key] = version;
       continue;
     }
-    if (hasMp3 && manifest[slug] === version) continue;
+    if (hasMp3 && manifest[key] === version) continue;
     if (!hasKeys) continue;
 
     const fresh = !hasMp3; // a deleted MP3 means a full new take
-    log(`${slug}: ${body.length} characters in ${parts.length} pieces with ${MODEL_ID}${fresh ? " (full new take)" : " (only changed pieces)"}`);
+    log(`${key}: ${body.length} characters in ${parts.length} pieces with ${MODEL_ID}${fresh ? " (full new take)" : " (only changed pieces)"}`);
     const audio = [];
     let reused = 0;
     for (let i = 0; i < parts.length; i++) {
@@ -214,15 +327,17 @@ async function main() {
       fs.writeFileSync(file, clip);
       audio.push(clip);
       creditsUsed += parts[i].length;
-      log(`${slug}: piece ${i + 1}/${parts.length} narrated`);
+      log(`${key}: piece ${i + 1}/${parts.length} narrated`);
     }
-    if (reused) log(`${slug}: reused ${reused} of ${parts.length} pieces`);
+    if (reused) log(`${key}: reused ${reused} of ${parts.length} pieces`);
+    fs.mkdirSync(path.dirname(mp3File), { recursive: true });
     fs.writeFileSync(mp3File, Buffer.concat(audio));
-    addAudioLine(postFile, slug);
-    manifest[slug] = version;
-    made.push(slug);
+    if (postFile) addAudioLine(postFile, key);
+    manifest[key] = version;
+    made.push(key);
   }
 
+  fs.mkdirSync(path.dirname(MANIFEST), { recursive: true });
   fs.writeFileSync(MANIFEST, `${JSON.stringify(manifest, null, 2)}\n`);
 
   // Keep only the cached pieces that current scripts still use.
