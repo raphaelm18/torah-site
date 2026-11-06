@@ -1,5 +1,5 @@
 ---
-status: ready
+status: draft
 model: eleven_v3
 ---
 
