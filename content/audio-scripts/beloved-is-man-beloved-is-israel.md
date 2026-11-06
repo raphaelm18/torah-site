@@ -1,5 +1,5 @@
 ---
-status: draft
+status: ready
 ---
 
 This is part one of a series on chosenness. And it starts with a question that's bugged me for years. Why do we pray for health only for Israel?

@@ -1,5 +1,5 @@
 ---
-status: draft
+status: ready
 ---
 
 This is the opening episode of a series on chosenness. Before I get into what it means to be chosen, I want to ask something simpler. What actually makes Judaism different from all the other religions out there? Without claiming it's the true one.

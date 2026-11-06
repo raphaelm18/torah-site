@@ -1,5 +1,5 @@
 ---
-status: draft
+status: ready
 ---
 
 This is part three of a series on chosenness. Last time, I ended with an orchestra. Every people has its own instrument. And Israel's covenant is specific, but not exclusive, the way a father's love for his own kids is specific without being the only love in the world. I meant it. But when I reread it, the ending felt like a shrug. The Torah doesn't call Israel one of God's children. It calls us His firstborn.

@@ -1,5 +1,5 @@
 ---
-status: draft
+status: ready
 ---
 
 This is part four of a series on chosenness. Last time, I ended on a question I couldn't answer, and it wouldn't leave me alone. If keeping kosher really tunes a person to God, why only us? And if it could tune anyone, why aren't we at least teaching it?

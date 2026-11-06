@@ -1,5 +1,5 @@
 ---
-status: draft
+status: ready
 ---
 
 This is part two of a series on chosenness. In part one, I pulled apart what bothered me about it. There's priority, giving to your own first, which every caring family does. And there's superiority, believing your own are worth more, which the Torah keeps refusing us. I landed on a line: we're a family, not an aristocracy. Birth gives you membership and obligation, not worth.
