@@ -1,6 +1,6 @@
 {
-  "a-lamp-not-a-salesman": "6deb1864ce54d861277eb6c9eb0f4750ba2f69372e71eb7d4d2a9a3faf4c4bf4",
-  "a-stack-of-almost-uniques": "dc0bf723ef552e34343aadcaba783ec90499dc3152763c83213657d054cbe31d",
+  "a-lamp-not-a-salesman": "f769196b19c93ff7a5cce115eb1f5da4ae5f8450515b1c71966f79ab65a8564d",
+  "a-stack-of-almost-uniques": "c47794bc2de3f711e1fe13e77f4cfd923d1146a2f236c32d63f966c8800b7bec",
   "sample:pronunciation-check": "13dabfcd5e25b66081ab4c2b559b777479502593daee6fbdd482ebac976965b1",
   "sample:pronunciation-fixes": "b9235de276ed5b40f623280808795c372d11fddad71064488aeb5193c9685179",
   "sample:pronunciation-check-2": "7820938a9e5a6124e154c48a9cbcb58227ad70b1fdedf4024c9997f688dd4e08",
@@ -8,5 +8,8 @@
   "sample:hebrew-test-v2": "7c2a2a0c60f6820cb1a8e4d3324c35c03a5dec6b264d24aa21c9bffd35eb0b90",
   "sample:hebrew-test-v3": "9375e8eaa05dad1a27ea4124ff32a21370647b2cb2bcdf3b1336709aaebe7dda",
   "sample:hebrew-keep-list": "51f237e1a204dc5a5511b00b3b3c4b59a830d7c97fbd31abb20705f20bac2e12",
-  "sample:hebrew-fixes-3": "60d89d415136c261be5cd5b620a52b0b7982eac1732458b672f4e392053cc7ad"
+  "sample:hebrew-fixes-3": "60d89d415136c261be5cd5b620a52b0b7982eac1732458b672f4e392053cc7ad",
+  "a-family-with-a-job": "05efe203f8158b63b4877f215969509323f24ddfde7a9d77077f68a374653b77",
+  "beloved-is-man-beloved-is-israel": "70043b50c970cba27941d3c9aa3774f4bdd318c5808f7e3477a784421b556151",
+  "the-concertmaster": "f1693e2df1739c6bc5d7b62aabf97bfd6d575eacf06c73b652662a98a0ef451e"
 }
