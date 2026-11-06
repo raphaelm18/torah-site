@@ -8,7 +8,7 @@ Here's the deal. I want to stay away from that second claim. "We're the true rel
 
 So here was my first pass. A list.
 
-First, text and scholarship. Thousands of pages of Talmud and halacha. A religion built out of words and arguments. Then, intellectual honesty. Ideas have to win on their merits, instead of being guarded by a priest class. Then a tether to the old texts. Every new question, even something like electricity on Shabbat, stays glued to the old structure.
+First, text and scholarship. Thousands of pages of Talmud and Jewish law. A religion built out of words and arguments. Then, intellectual honesty. Ideas have to win on their merits, instead of being guarded by a priest class. Then a tether to the old texts. Every new question, even something like electricity on Shabbat, stays glued to the old structure.
 
 Then a few more. Jews were more literate than their neighbors for most of history. We survived exile, and today there are about sixteen million Jews. You can walk into a synagogue almost anywhere and follow along. Our tradition is the foundation for the two biggest religions on earth. And there's the claim of a revelation to an entire nation, at Sinai.
 
@@ -56,7 +56,7 @@ But was the average Jew really in the argument?
 
 Not all of them. The sources talk about the unlearned, and there were plenty. Real fluency in the Talmud belonged to a minority. And women were mostly left outside the system.
 
-But the floor was higher than I first thought. Every Jew is supposed to review the parasha twice, plus the translation. And the Shulchan Aruch lets Rashi's commentary count as the translation. Rashi spends his whole commentary asking why a verse says it this way. Do that every week, and you learn to read like a detective.
+But the floor was higher than I first thought. Every Jew is supposed to review the parasha twice, plus the translation. And the Code of Jewish Law lets Rashi's commentary count as the translation. Rashi spends his whole commentary asking why a verse says it this way. Do that every week, and you learn to read like a detective.
 
 And the prestige pointed at argument. The son-in-law every family dreamed about was the one who could hold his own on a page of Talmud. A culture where the highest status goes to the best arguer shapes everyone, even the people who never get there. <break time="1.0s" />
 

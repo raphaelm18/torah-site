@@ -18,7 +18,7 @@ Yes. And that's the first half of the answer. I'm from Philly. Philly sports fan
 
 Moshe Koppel, a computer scientist who founded a think tank in Israel, has an image I keep coming back to. I learned it from him, though I haven't pinned down where he first put it in writing. Imagine you have a pile of sand to give. Spread it over the whole world, and everyone gets one grain. Give to your kids first, then your village, then further out, and each circle actually gets something real.
 
-That's not a Jewish idea. That's how every caring person works. My grandmother gave to the Philly food bank, not the one in St. Louis. Nobody calls that bigotry. And halacha says the same thing in its own words: the poor of your own city come first.
+That's not a Jewish idea. That's how every caring person works. My grandmother gave to the Philly food bank, not the one in St. Louis. Nobody calls that bigotry. And Jewish law says the same thing in its own words: the poor of your own city come first.
 
 So the first claim is priority. I give to my own first. I can defend that, and to me, it doesn't bother me at all. What bothers me is a second claim that likes to ride along with it.
 
@@ -60,7 +60,7 @@ We did. Look at American Jewish life, and you can see his sentence broken in hal
 
 On one side, the universalists kept "beloved is man." Repairing the world, helping everyone. And honestly, it's inspiring. It brings real honor to God's name. But sometimes the particular gets lost completely. I once knew a homeless Jewish woman in San Diego. She told me a Jewish agency offered her canned pork. That's one person's story, and I can't verify it.
 
-On the other side, the religious kept "beloved is Israel." The tzedakah goes to the synagogue, to Israel, to the Jewish poor. The circle stays tight. Meanwhile, halacha itself says to feed the non-Jewish poor, visit their sick, and bury their dead. The homeless people of San Diego are the poor of your city too.
+On the other side, the religious kept "beloved is Israel." The tzedakah goes to the synagogue, to Israel, to the Jewish poor. The circle stays tight. Meanwhile, Jewish law itself says to feed the non-Jewish poor, visit their sick, and bury their dead. The homeless people of San Diego are the poor of your city too.
 
 Each camp is holding half of Rabbi Akiva's sentence and calling it the whole thing. <break time="1.0s" />
 

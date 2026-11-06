@@ -74,7 +74,7 @@ The Talmud says it straight out. Greater is the one who is commanded and does, t
 
 The usual answer is that inspiration fades, and obligation keeps you going when it does. Fair. But that's a practical reason. To me, from first principles, it comes down to humility. Doing something because you were told to means you're taking instruction. You're not a cowboy riding your own trail to God. You're a kid again, and Dad said so. And that's the right posture for a human being in front of God. Feeling like a child before Him isn't a step down. It's just accurate. <break time="1.0s" />
 
-That said, I have to push back on myself, because the Torah does. In Devarim, the book of Deuteronomy, the curses come because you didn't serve God with joy and a glad heart. Not because we didn't serve. Because we served without joy. And Isaiah has God asking what He needs all their sacrifices for. Being commanded with an empty heart can be worse than serving with a full one and no command at all. And watching Max play for sick kids, I believe that.
+That said, I have to push back on myself, because the Torah does. Near the end of the Torah, in Moshe's last speeches to the people, the curses come because you didn't serve God with joy and a glad heart. Not because we didn't serve. Because we served without joy. And Isaiah has God asking what He needs all their sacrifices for. Being commanded with an empty heart can be worse than serving with a full one and no command at all. And watching Max play for sick kids, I believe that.
 
 The Talmud gives the empty one a way back. Doing it for the wrong reasons leads to doing it for the right ones. The person who keeps the practice without feeling it is still holding the vessel. So the heart has somewhere to come back to.
 

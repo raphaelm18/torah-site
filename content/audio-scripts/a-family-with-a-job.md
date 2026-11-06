@@ -60,7 +60,7 @@ Fine. But does not mixing milk and meat really make us a brighter light to the n
 
 Oof, that's the question I keep coming back to. A lot of our practice, especially the rabbinic layers, doesn't look like light to anyone outside. Nobody walks past a kosher kitchen and feels inspired.
 
-The answer I've learned from Kabbalah, and I kind of buy it, is that the mitzvot work on the channel, not the light. Rav Guy called it zikuch, refining. The mitzvot polish us, so God's light shines through more brightly. The light is God's. The practice is the polish. <break time="1.0s" /> So more of Him comes through in how we act, how we speak, and how we treat people.
+The answer I've learned from Kabbalah, and I kind of buy it, is that the mitzvot work on the channel, not the light. Rav Guy calls it refining. The mitzvot polish us, so God's light shines through more brightly. The light is God's. The practice is the polish. <break time="1.0s" /> So more of Him comes through in how we act, how we speak, and how we treat people.
 
 I can't prove that. But it rings true to me. And it means the test of the practice isn't the practice itself. It's whether the people on the other side of the window see more light.
 
