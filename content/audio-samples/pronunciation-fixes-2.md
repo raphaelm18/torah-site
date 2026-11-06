@@ -1,5 +1,5 @@
 ---
-status: ready
+status: draft
 ---
 
 A quick check of the fixes. Chesed, kindness. Chazal taught it. The Ramchal and the Shechinah. Chochmah and zikuch. Chanukah and Rosh Chodesh. The chukim. Pesach. The Tanakh and the Shulchan Aruch. Halacha. Bitachon. Moshiach. Tzomeach. Chabad. Chag Sameach. A chuppah. A chavruta.

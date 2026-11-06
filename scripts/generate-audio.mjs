@@ -202,18 +202,19 @@ async function ensureDictionary() {
   return dictionaryLocators;
 }
 
-function cacheFile(text) {
-  const key = `${MODEL_ID}\n${VOICE_ID}\n${OUTPUT_FORMAT}\n${rulesIn(text)}\n${text}`;
+function cacheFile(text, model = MODEL_ID) {
+  const key = `${model}\n${VOICE_ID}\n${OUTPUT_FORMAT}\n${rulesIn(text)}\n${text}`;
   return path.join(CACHE_DIR, `${sha(key)}.mp3`);
 }
 
-async function speak(text, previousText, nextText) {
+async function speak(text, previousText, nextText, model = MODEL_ID) {
   const url = `https://api.elevenlabs.io/v1/text-to-speech/${encodeURIComponent(VOICE_ID)}?output_format=${OUTPUT_FORMAT}`;
-  const body = { text, model_id: MODEL_ID };
+  const body = { text, model_id: model };
   const locators = await ensureDictionary();
   if (locators.length) body.pronunciation_dictionary_locators = locators;
-  if (previousText) body.previous_text = previousText.slice(-1000);
-  if (nextText) body.next_text = nextText.slice(0, 1000);
+  const contextOk = !model.startsWith("eleven_v3"); // v3 does not take neighbouring text
+  if (contextOk && previousText) body.previous_text = previousText.slice(-1000);
+  if (contextOk && nextText) body.next_text = nextText.slice(0, 1000);
   for (let attempt = 1; attempt <= 3; attempt++) {
     const response = await fetch(url, {
       method: "POST",
@@ -265,6 +266,13 @@ function readyBody(file) {
   return isReady(meta) ? body : null;
 }
 
+// A sample may name its own model (model: eleven_v3) to compare models.
+function sampleModel(file) {
+  const { meta } = splitFrontmatter(fs.readFileSync(file, "utf8"));
+  const match = meta.match(/^model:\s*"?([\w.-]+)"?\s*$/m);
+  return match ? match[1] : MODEL_ID;
+}
+
 // Everything that could be narrated: episodes (one per post) and test samples.
 function jobs() {
   const list = [];
@@ -283,7 +291,8 @@ function jobs() {
       if (!name.endsWith(".md")) continue;
       const slug = name.replace(/\.md$/, "");
       const body = readyBody(path.join(SAMPLES_DIR, name));
-      if (body !== null) list.push({ key: `sample:${slug}`, body, postFile: null, mp3File: path.join(SAMPLES_OUT, `${slug}.mp3`) });
+      const model = sampleModel(path.join(SAMPLES_DIR, name));
+      if (body !== null) list.push({ key: `sample:${slug}`, body, postFile: null, mp3File: path.join(SAMPLES_OUT, `${slug}.mp3`), model });
     }
   }
   return list;
@@ -300,16 +309,17 @@ async function main() {
 
   for (const job of jobs()) {
     const { key, body, postFile, mp3File } = job;
+    const model = job.model || MODEL_ID;
     if (body.length > MAX_SCRIPT_CHARS) {
       log(`${key}: script is ${body.length} characters, over the ${MAX_SCRIPT_CHARS} safety limit; skipped.`);
       continue;
     }
 
     const parts = chunk(body);
-    for (const part of parts) keep.add(path.basename(cacheFile(part)));
+    for (const part of parts) keep.add(path.basename(cacheFile(part, model)));
 
     // The version covers the text and the dictionary entries it uses.
-    const version = sha(`${body}\n--\n${rulesIn(body)}`);
+    const version = sha(`${model === MODEL_ID ? "" : model}${body}\n--\n${rulesIn(body)}`);
     const hasMp3 = fs.existsSync(mp3File);
     if (hasMp3 && (!manifest[key] || manifest[key] === sha(body))) {
       // Narrated before this version scheme (or before the manifest): treat the MP3 as current.
@@ -320,17 +330,17 @@ async function main() {
     if (!hasKeys) continue;
 
     const fresh = !hasMp3; // a deleted MP3 means a full new take
-    log(`${key}: ${body.length} characters in ${parts.length} pieces with ${MODEL_ID}${fresh ? " (full new take)" : " (only changed pieces)"}`);
+    log(`${key}: ${body.length} characters in ${parts.length} pieces with ${model}${fresh ? " (full new take)" : " (only changed pieces)"}`);
     const audio = [];
     let reused = 0;
     for (let i = 0; i < parts.length; i++) {
-      const file = cacheFile(parts[i]);
+      const file = cacheFile(parts[i], model);
       if (!fresh && fs.existsSync(file)) {
         audio.push(fs.readFileSync(file));
         reused++;
         continue;
       }
-      const clip = await speak(parts[i], parts[i - 1], parts[i + 1]);
+      const clip = await speak(parts[i], parts[i - 1], parts[i + 1], model);
       fs.writeFileSync(file, clip);
       audio.push(clip);
       creditsUsed += parts[i].length;
