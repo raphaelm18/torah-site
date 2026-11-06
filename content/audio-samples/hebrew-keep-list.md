@@ -1,5 +1,5 @@
 ---
-status: ready
+status: draft
 ---
 
 This is the full list of Hebrew I'll use in the audio.
