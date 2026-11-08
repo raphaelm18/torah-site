@@ -321,7 +321,9 @@ async function main() {
     // The version covers the text and the dictionary entries it uses.
     const version = sha(`${model === MODEL_ID ? "" : model}${body}\n--\n${rulesIn(body)}`);
     const hasMp3 = fs.existsSync(mp3File);
-    if (hasMp3 && (!manifest[key] || manifest[key] === sha(body))) {
+    // ACCEPT_CURRENT=1 marks every existing MP3 as current (used when a dictionary change
+    // should apply to future recordings only).
+    if (hasMp3 && (process.env.ACCEPT_CURRENT === "1" || !manifest[key] || manifest[key] === sha(body))) {
       // Narrated before this version scheme (or before the manifest): treat the MP3 as current.
       manifest[key] = version;
       continue;
