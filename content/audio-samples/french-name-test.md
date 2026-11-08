@@ -1,5 +1,5 @@
 ---
-status: ready
+status: draft
 ---
 
 Version A. A French Catholic named Aimé Pallière.

@@ -13,3 +13,4 @@ The voice clone reads Hebrew inside English only partly well: "ch" becomes "chee
 - Book names (Bereshit, Shemot, Devarim...): place the scene instead ("near the end of the Torah, in Moshe's last speeches...")
 - Hebrew phrases, verses and blessings: English, always (blessings in Hebrew sounded off)
 - Any Hebrew word not on the safe list: English, until it passes a pronunciation check and is added here
+- French names (Aimé Pallière): keep the name in the audio, read the American way. The voice can't switch to a French accent mid-sentence (no French r), so no respelling.
