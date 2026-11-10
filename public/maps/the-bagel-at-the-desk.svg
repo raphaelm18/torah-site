@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" fill="none" font-family="Georgia, serif">
+  <title>Kohelet asks for both: taste it fully, and work fully</title>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1E1A16"/></marker>
+  </defs>
+  <rect width="760" height="560" fill="#FBF8F3"/>
+  <text x="24" y="38" fill="#1E1A16" font-size="17" font-weight="bold">Kohelet asks for both: taste it fully, and work fully</text>
+  <g stroke="#1E1A16" stroke-width="1.25">
+    <rect x="160" y="64" width="576" height="60" rx="6"/>
+    <rect x="160" y="144" width="576" height="60" rx="6"/>
+    <rect x="160" y="304" width="576" height="60" rx="6"/>
+    <rect x="160" y="384" width="576" height="60" rx="6"/>
+    <path d="M448 124V142" marker-end="url(#a)"/>
+    <path d="M448 204V222" marker-end="url(#a)"/>
+    <path d="M448 284V302" marker-end="url(#a)"/>
+    <path d="M448 364V382" marker-end="url(#a)"/>
+    <path d="M448 444V462" marker-end="url(#a)"/>
+  </g>
+  <rect x="160" y="224" width="576" height="60" rx="6" fill="#A2462A" fill-opacity="0.08" stroke="#A2462A" stroke-width="2"/>
+  <rect x="160" y="464" width="576" height="60" rx="6" fill="#A2462A" fill-opacity="0.08" stroke="#A2462A" stroke-width="2"/>
+  <g fill="#6B635A" font-size="13" font-style="italic">
+    <text x="24" y="99">Claim</text>
+    <text x="24" y="179">Pushback</text>
+    <text x="24" y="259" fill="#A2462A">Refinement</text>
+    <text x="24" y="339">Pushback</text>
+    <text x="24" y="419">Pushback</text>
+    <text x="24" y="499" fill="#A2462A">Refinement</text>
+  </g>
+  <g fill="#1E1A16" font-size="15" font-weight="bold">
+    <text x="176" y="89">Everything we chase is breath</text>
+    <text x="176" y="169">So nothing matters?</text>
+    <text x="176" y="249">Enjoy the simple things, from His hand</text>
+    <text x="176" y="329">Then why don't I do it?</text>
+    <text x="176" y="409">Already approved, yet do it with all your strength?</text>
+    <text x="176" y="489">Both are true: be present, and be all in</text>
+  </g>
+  <g fill="#6B635A" font-size="13">
+    <text x="176" y="111">Hevel: essential, but you can't hold it (1:2)</text>
+    <text x="176" y="191">No: the failure is hoarding and never tasting (5:12, 4:8)</text>
+    <text x="176" y="271">Seven refrains, God in the same breath (2:24)</text>
+    <text x="176" y="351">The chase for more, even in the five minutes I have the thing</text>
+    <text x="176" y="431">9:7 says sit down and eat; 9:10 says give it everything</text>
+    <text x="176" y="511">A good life has projects you care about; halfway isn't rewarding</text>
+  </g>
+</svg>
