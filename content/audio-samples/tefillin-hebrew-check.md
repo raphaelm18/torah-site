@@ -1,5 +1,5 @@
 ---
-status: ready
+status: draft
 ---
 
 One. The letters shin, dalet, and yud spell Shaddai.
