@@ -1,5 +1,5 @@
 ---
-status: ready
+status: draft
 ---
 
 Pronunciation check for the Sukkot episode. Each word comes after its number.
