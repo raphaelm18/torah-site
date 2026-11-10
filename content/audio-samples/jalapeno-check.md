@@ -1,5 +1,5 @@
 ---
-status: ready
+status: draft
 ---
 
 One. Jalapeño. A jalapeño cheddar bagel with tuna from Mission Bagel.
